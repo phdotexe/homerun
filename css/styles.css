@@ -59,22 +59,22 @@ nav ul li{
     padding-right: 2.8rem;
 }
 
-header .btn-pry{
+.btn-pry{
     background-color: #09f;
     color: #fff;
     margin-left: 6px;
 }
 
-header .btn-pry:hover{
+.btn-pry:hover{
     background-color: #07f;
 }
 
-header .btn-sec{
+.btn-sec{
     background-color: #fff;
     border: 1px solid #ccc;
 }
 
-header .btn-sec:hover{
+.btn-sec:hover{
     background-color: #f8f8f8;
 }
 
@@ -84,8 +84,10 @@ header.mobile-head{
 
 
 /* hero section */
+main{
+    padding-top: 120px;
+}
 section.hero{
-    padding-top: 100px;
     text-align: center;
 }
 section.hero h1{
@@ -93,12 +95,45 @@ section.hero h1{
     margin: auto;
     font-size: 10rem;
     line-height: 12rem;
+    background: -webkit-linear-gradient(#597efd, #c07dfd);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 section.hero p{
     font-size: 2.5rem;
-    padding-top: 5.5rem;
+    padding-top: 3.5rem;
     width: 50%;
     margin: auto;
+    padding-bottom: 4rem;
 }
 
+.hero span{
+    border: 3px solid #09f;
+    border-radius: 6px;
+    height: auto;
+    width: 100px;
+    padding: 15px 0px;
+    padding-left: 0.8rem;
+}
+
+.hero span input{
+    border: none;
+    outline: none
+}
+
+.hero span button{
+    position: relative;
+    top: 2px;
+}
+
+/* teams */
+section.teams{
+    padding-top: 80px;
+}
+
+section.teams{
+    color:#b2b2b2;
+    
+}
