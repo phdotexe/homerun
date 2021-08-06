@@ -1,0 +1,104 @@
+:root{
+    --blue: #07f;
+    --white: #fff;
+}
+
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'GT Walsheim';
+    src:  url('fonts\GTWalsheimPro-Black.eot') format('woff2');
+}
+
+html{
+    font-family: 'GT Walsheim', Poppins;
+    font-size: 10px;
+}
+
+header, section, footer{
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+    position: fixed;
+    width: 100%;
+    /* top: 0; */
+    background-color: #fff;
+}
+
+button{
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+    border-radius: 6px;
+}
+
+header img{
+    width: 10rem;
+}
+
+header nav{
+    font-size: 1.8rem;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li{
+    padding-right: 2.8rem;
+}
+
+header .btn-pry{
+    background-color: #09f;
+    color: #fff;
+    margin-left: 6px;
+}
+
+header .btn-pry:hover{
+    background-color: #07f;
+}
+
+header .btn-sec{
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+header .btn-sec:hover{
+    background-color: #f8f8f8;
+}
+
+header.mobile-head{
+    display: none;
+}
+
+
+/* hero section */
+section.hero{
+    padding-top: 100px;
+    text-align: center;
+}
+section.hero h1{
+    width: 80%;
+    margin: auto;
+    font-size: 10rem;
+    line-height: 12rem;
+}
+
+section.hero p{
+    font-size: 2.5rem;
+    padding-top: 5.5rem;
+    width: 50%;
+    margin: auto;
+}
+
