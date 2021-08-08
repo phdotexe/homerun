@@ -19,8 +19,8 @@ html{
 }
 
 header, section, footer{
-    padding-left: 6rem;
-    padding-right: 6rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
 }
 
 header{
@@ -32,6 +32,7 @@ header{
     width: 100%;
     /* top: 0; */
     background-color: #fff;
+    z-index: 5;
 }
 
 button{
@@ -39,7 +40,7 @@ button{
     border: none;
     outline: none;
     font-size: 1.8rem;
-    border-radius: 6px;
+    border-radius: 50px;
 }
 
 header img{
@@ -111,29 +112,392 @@ section.hero p{
 
 .hero span{
     border: 3px solid #09f;
-    border-radius: 6px;
+    border-radius: 50px;
     height: auto;
     width: 100px;
     padding: 15px 0px;
-    padding-left: 0.8rem;
+    padding-left: 1.5rem;
 }
 
 .hero span input{
     border: none;
-    outline: none
+    outline: none;
 }
 
-.hero span button{
+.hero span button.btn-input{
     position: relative;
     top: 2px;
+    border-radius: 0px 50px 50px 0px!important;
 }
-
 /* teams */
 section.teams{
     padding-top: 80px;
+    text-align: center;
 }
 
-section.teams{
+section.teams h4{
     color:#b2b2b2;
-    
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.team-images{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.team-images img{
+    width: 160px;
+}
+
+/* works */
+
+.description{
+    padding-top: 100px;
+    text-align: center;
+}
+
+.description h2{
+    font-size: 4rem;
+    padding-bottom: 30px;
+}
+
+.description video{
+    border-radius: 8px;
+    width: 100%;
+}
+
+.description button{
+    border-radius: 60px;
+    padding: 2rem;
+    position:relative;
+    top: -40px;
+    background-color: #fff;
+    box-shadow: 0px 1px 10px 1px #ccc;
+}
+
+/* hire-create */
+.hire-create-block{
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    padding-bottom: 40px;
+}
+
+.text{
+    width: 100%;
+}
+
+.text h2{
+    color: #0c9f64;
+    font-size: 2.5rem;
+}
+
+.text h3{
+    color: #0E1016F2;
+    font-size: 5.8rem;
+}
+
+.text p{
+    color: #0E1016F2;
+    font-size: 2.2rem;
+}
+
+.hire-create-block video{
+    width: 100%;
+}
+
+.hire-create-block h6{
+    color: #0e101666;
+    font-size: 1.6rem;
+}
+
+.hire-video-block{
+    width: 100%;
+}
+.learnmore{
+    margin-top: 40px;
+}
+
+.create{
+    flex-direction: row-reverse;
+}
+
+/* club */
+.club{
+    color: #fff;
+    background-color: #202e78;
+    text-align: center;
+    padding: 5rem 0;
+    border-radius: 12px;
+
+}
+
+.club img{
+    width: 8rem;
+}
+.club h2{
+    font-size: 5.8rem;
+}
+
+.club p{
+    font-size: 2.2rem;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 5.2rem;
+}
+
+.club button{
+    font-size: 1.8rem;
+    background-color: #202e7800;
+    border: 2px solid #fff8;
+    color: #fffe;
+}
+
+.club button:hover{
+    border-color: hsla(0,0%,100%,0);
+    background-color: hsla(0,0%,100%,.3);
+}
+
+.club-quote{
+    width: 96%;
+    border-radius: 12px;
+    margin:  2rem auto;
+    background-color: #000639;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+
+}
+
+.club-quote>img{
+   width: 100%;
+   height: 100%;
+}
+
+.club-quote>div{
+    padding: 7rem 3rem;
+}
+
+.club-quote>div>img{
+    width: 129px;
+    padding-bottom: 2rem;
+}
+.club h4{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+
+.club h5{
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.club h6{
+    font-size: 2.2rem;
+    color: #fff8;
+    padding-bottom: 3rem;
+    font-weight: 400;
+}
+
+/* template */
+
+.template{
+    background-color: #181818;
+    color: #fff;
+    text-align: center;
+    margin-top: 7rem;
+    padding: 4rem 0 0 0;
+    /* width: 100%; */
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.template button:first-child{
+    color: #fff;
+    background-color: #f64775;
+}
+
+.template button:first-child{
+    background-color: #f64775;
+}
+.template h2{
+    font-size: 4.8rem;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 2rem;
+}
+
+.template p{
+    font-size: 1.8rem;
+    width: 40%;
+    margin: auto;
+    padding-bottom: 2rem;
+}
+
+.template button{
+    color: #fff;
+    background-color: #09f;
+    padding-bottom: 2rem;
+
+}
+
+.template button:hover{
+    background-color: #07f;
+}
+
+
+.template-media img:last-child/*hiding the mobile image*/{
+    display: none;
+}
+
+/* reviews */
+
+.reviews{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 25% 25% 25% 25%; */
+    color: rgba(14,16,22,.95);
+    padding: 8rem 0 0;
+}
+
+.review{
+    text-align: center;
+    padding-bottom: 6rem;
+}
+
+.review img:first-child{
+    width: 157px;
+}
+
+.review img{
+    width: 28.5rem;
+}
+.review h2{
+    font-size: 8.2rem;
+}
+
+.review h3{
+    font-size: 5.2rem;
+}
+
+.review p{
+    font-size: 2rem;
+    width: 70%;
+    margin: auto;
+}
+
+/* Trial */
+.trial{
+    text-align: center;
+    background-color: #3ca9ff;
+    color: #fff;
+    padding: 4.5rem 0;
+    margin-bottom: 4rem;
+    border-radius: 12px;
+}
+
+.trial img{
+    width: 150px;
+}
+
+.trial h2{
+    font-size: 5.8rem;
+    width: 60%;
+    margin: auto;
+}   
+
+.trial button{
+    background-color: #0e1016;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.trial div{
+
+}
+.trial span{
+    font-size: 1.7rem;
+    padding-left: 15px;
+}
+
+/* footer */
+
+footer{
+    background-color: rgba(0,0,0,.95);
+    color: #778291;
+    padding: 1.6rem 3rem;
+    font-size: 1.8rem;
+    border-radius: 12px;
+}
+
+.footer-head{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+}
+.footer-head img{
+    width: 100px;
+}
+
+.footer-head button{
+    background-color: #09f;
+    color:#fff;
+    font-size: 1.4rem;
+    padding: 10px;
+}
+
+.footer-head button:hover{
+    background-color: #07f;
+}
+
+footer h2, h4:hover{
+    color: #fff;
+}
+
+footer h4{
+    font-weight: 500;
+}
+.footer-blocks{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-block{
+    padding-right: 6rem
+}
+
+@media only screen and (max-width: 950px) {
+    html{
+        font-size: 6px;
+    }
+    header.desktop-head{
+        display: none;
+    }
+
+    header.mobile-head{
+        display: flex;
+    }
+
+    .hire-create-block{
+        grid-template-columns: 1fr!important;
+    }
+
+    .club-quote{
+        grid-template-columns: 1fr;
+    }
+
+    .template-media img:first-child{
+        display: none;
+    }
+    .template-media img:last-child{
+        display: block;
+    }
+
+    .reviews{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
