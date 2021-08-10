@@ -165,7 +165,9 @@ section.teams h4{
 
 .description video{
     border-radius: 8px;
-    width: 100%;
+    width: 75%;
+    display: block;
+    margin: auto;
 }
 
 .description button{
@@ -358,7 +360,6 @@ section.teams h4{
 .reviews{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* grid-template-rows: 25% 25% 25% 25%; */
     color: rgba(14,16,22,.95);
     padding: 8rem 0 0;
 }
@@ -415,9 +416,6 @@ section.teams h4{
     margin-bottom: 2rem;
 }
 
-.trial div{
-
-}
 .trial span{
     font-size: 1.7rem;
     padding-left: 15px;
